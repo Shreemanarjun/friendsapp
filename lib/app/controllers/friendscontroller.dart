@@ -13,7 +13,7 @@ class FriendsController extends GetxController with StateMixin<List<Friend>> {
   void onInit() async {
     debounce(currentquery, (_) async {
       if (currentquery.value.isEmpty) {
-        print("query changes");
+       // print("query changes");
         await getAllFriends();
       } else {
         await getFriendsByName(currentquery.value);

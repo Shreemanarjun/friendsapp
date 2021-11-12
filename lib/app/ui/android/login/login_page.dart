@@ -5,7 +5,6 @@ import 'package:friendsapp/app/controllers/logincontroller.dart';
 import 'package:friendsapp/app/ui/android/login/login_consts.dart';
 import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:sqlite_viewer/sqlite_viewer.dart';
 
 class LoginPage extends StatelessWidget {
   LoginPage({Key? key}) : super(key: key);
@@ -120,7 +119,7 @@ class LoginPage extends StatelessWidget {
   Widget _buildSignupBtn() {
     return GestureDetector(
       onTap: () {
-        print('signup clicked');
+     //   print('signup clicked');
         Get.toNamed("/signup");
       },
       child: RichText(

@@ -53,7 +53,7 @@ class LoginController extends GetxController {
         Get.toNamed(Routes.initial);
       }
     } catch (e) {
-      print(e);
+     // print(e);
       if (e is DatabaseException) {
         if (e.isUniqueConstraintError()) {
           const snackBar = SnackBar(
